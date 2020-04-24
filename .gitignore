@@ -29,7 +29,7 @@ ehthumbs.db
 
 # Firebase
 .firebaserc
-/.firebase
+.firebase/
 
 # Built ts files
 dist/**/*
