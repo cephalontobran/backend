@@ -17,7 +17,7 @@
     "import": "ts-node src\\import.ts",
     "build": "tsc",
     "build:watch": "tsc --watch",
-    "commit": "commit",
+    "commit": "git-cz",
     "test": "jest",
     "test:watch": "majestic",
     "lint": "eslint \"**/*.{js,ts}\" --quiet --fix",
@@ -45,10 +45,11 @@
   "devDependencies": {
     "@commitlint/cli": "^8.3.5",
     "@commitlint/config-conventional": "^8.3.4",
-    "@commitlint/prompt-cli": "^8.3.5",
     "@types/jest": "^25.2.1",
     "@typescript-eslint/eslint-plugin": "^2.29.0",
     "@typescript-eslint/parser": "^2.29.0",
+    "commitizen": "^4.0.4",
+    "cz-conventional-changelog": "^3.1.0",
     "eslint": "^6.8.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-jest": "^23.8.2",
@@ -66,6 +67,11 @@
   "husky": {
     "hooks": {
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
     }
   }
 }
