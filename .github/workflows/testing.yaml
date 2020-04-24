@@ -35,4 +35,4 @@ jobs:
         uses: bahmutov/npm-install@v1
 
       - name: Run tests with coverage
-        run: yarn test --ci --collectCoverage
+        run: yarn test --ci --colors --collectCoverage
