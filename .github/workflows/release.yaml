@@ -6,6 +6,8 @@ on:
       - master
 
     paths-ignore:
+      - ".*/**"
+      - "!.github/workflows/release.yaml"
       - "CHANGELOG.md"
       - "package.json"
 
