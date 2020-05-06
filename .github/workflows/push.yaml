@@ -43,7 +43,7 @@ jobs:
         run: yarn install --ci --colors --frozen-lockfile
 
       - name: Lint
-        run: yarn run lint:ci
+        run: yarn run lint:ci --ci --colors
 
       - name: Test
         run: yarn test --ci --colors --collectCoverage
